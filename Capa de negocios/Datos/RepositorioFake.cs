@@ -34,11 +34,11 @@ namespace Capa_de_negocios.Datos
             return null;
         }
 
-        public static Boolean consultarUsuario(String correo, String contraseña)
+        public static Boolean consultarUsuario(String codigo, String contraseña)
         {
             foreach (Usuario usuario in usuarios)
             {
-                if ((usuario.getContraseña().Equals(contraseña)) && (usuario.getCorreoElectronico().Equals(correo)))
+                if ((usuario.getContraseña().Equals(contraseña)) && (usuario.getCodigo().Equals(codigo)))
                 {
                     return true;
                 }
