@@ -1,0 +1,18 @@
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.csprojAssemblyReference.cache
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Prueba.exe.config
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Prueba.exe
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Prueba.pdb
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Capa de datos.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Capa de negocios.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\EntityFramework.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Capa de datos.pdb
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Capa de datos.dll.config
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Capa de negocios.pdb
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Capa de negocios.dll.config
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\EntityFramework.xml
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.csproj.CopyComplete
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.exe
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.pdb

@@ -10,16 +10,70 @@ namespace Capa_de_negocios.Control
 {
     class ControladoraRegistrarAlSistema
     {
+        public List<String> roles;
         ControladoraRegistrarAlSistema()
         {
-           
+            roles = new List<string>();
+            roles.Add("Coach");
+            roles.Add("Estudiante");
         }
 
         public Boolean registrarUsuario(String datos)
         {
-            Usuario usuario = new Usuario(datos);
-            if (RepositorioFake.BuscarUsuario(usuario.getCodigo()) == null)
+            var nombre="";
+            var apellido = "";
+            var institucion = "";
+            var rol = "";
+            var correoElectronico = "";
+            var contraseña = "";
+            var codigo = "";
+            String[] vectorSeparacion;
+            vectorSeparacion = datos.Split(',');
+            foreach (String datosJSON in vectorSeparacion)
             {
+                String[] vectorSeparadorJSON = datosJSON.Split(':');
+                switch (vectorSeparadorJSON[0])
+                {
+                    case "nombre":
+                        nombre = vectorSeparadorJSON[1];
+                        break;
+                    case "apellido":
+                        apellido = vectorSeparadorJSON[1];
+                        break;
+                    case "institucion":
+                        institucion = vectorSeparadorJSON[1];
+                        break;
+                    case "rol":
+                        rol = vectorSeparadorJSON[1];
+                        break;
+                    case "correoElectronico":
+                        correoElectronico = vectorSeparadorJSON[1];
+                        break;
+                    case "contraseña":
+                        contraseña = vectorSeparadorJSON[1];
+                        break;
+                    case "codigo":
+                        codigo = vectorSeparadorJSON[1];
+                        break;
+                }
+            }
+            foreach(String tipoRol in roles)
+            {
+                if(!rol.Equals(tipoRol))
+                {
+                    return false;
+                }
+            }
+            if (RepositorioFake.BuscarUsuario(codigo) == null)
+            {
+                Usuario usuario = new Usuario();
+                usuario.nombre = nombre;
+                usuario.apellido = apellido;
+                usuario.codigo = codigo;
+                usuario.institucion = institucion;
+                usuario.rol = rol;
+                usuario.codigo = codigo;
+                usuario.correoElectronico = correoElectronico;
                 RepositorioFake.adicionarUsuario(usuario);
                 return true;
             }

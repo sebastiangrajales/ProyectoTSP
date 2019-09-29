@@ -1,53 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Capa_de_negocios.Entidades
 {
-    class Usuario
+    public class Usuario
     {
-        private String nombre;
-        private String apellido;
-        private String institucion;
-        private String rol;
-        private String correoElectronico;
-        private String contraseña;
-        private String codigo;
+        public String nombre { get; set; }
+        public String apellido { get; set; }
+        public String institucion { get; set; }
+        public String rol { get; set; }
+        public String correoElectronico { get; set; }
+        public String contraseña { get; set; }
+        [Key]
+        public String codigo { get; set; }
+        
 
-        public Usuario(String datos)
+        public Usuario()
         {
-            String[] vectorSeparacion;
-            vectorSeparacion = datos.Split(',');
-            foreach (String datosJSON in vectorSeparacion)
-            {
-                String[] vectorSeparadorJSON = datosJSON.Split(':');
-                switch (vectorSeparadorJSON[0])
-                {
-                    case "nombre":
-                        nombre = vectorSeparadorJSON[1];
-                        break;
-                    case "apellido":
-                        apellido = vectorSeparadorJSON[1];
-                        break;
-                    case "institucion":
-                        institucion = vectorSeparadorJSON[1];
-                        break;
-                    case "rol":
-                        rol = vectorSeparadorJSON[1];
-                        break;
-                    case "correoElectronico":
-                        correoElectronico = vectorSeparadorJSON[1];
-                        break;
-                    case "contraseña":
-                        contraseña = vectorSeparadorJSON[1];
-                        break;
-                    case "codigo":
-                        codigo = vectorSeparadorJSON[1];
-                        break;
-                }
-            }
         }
 
         public String getNombre()

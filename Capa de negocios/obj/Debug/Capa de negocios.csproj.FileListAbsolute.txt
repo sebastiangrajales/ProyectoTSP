@@ -1,0 +1,16 @@
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\Capa de negocios.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\Capa de negocios.pdb
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.csproj.CoreCompileInputs.cache
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.pdb
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\Capa de negocios.dll.config
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.xml
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.csprojAssemblyReference.cache
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.csproj.CopyComplete
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.xml
+C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.Entity.EF6.xml

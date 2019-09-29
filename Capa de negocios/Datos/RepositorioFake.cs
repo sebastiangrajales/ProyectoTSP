@@ -7,9 +7,9 @@ using Capa_de_negocios.Entidades;
 
 namespace Capa_de_negocios.Datos
 {
-    class RepositorioFake
+    public static class RepositorioFake
     {
-        static private List<Usuario> usuarios;
+        static private List<Usuario> usuarios=new List<Usuario>();
         static private List<Tarea> tareas;
 
         //public RepositorioFake()
