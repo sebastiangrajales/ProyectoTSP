@@ -16,11 +16,12 @@ namespace Capa_de_negocios.Entidades
         private int minutosLiderDesarrollo;
         private int minutosTotalesPlaneados;
         private int semanaPlaneadaTerminacion;
-        private int valorPlaneado;
+        private double valorPlaneado;
         private List<String> minutosRolReal;
         private int minutosTotalesReal;
         private int semanaRealTerminacion;
         private int valorGanado;
+        public double horasTrabajoSemanal { get; set; }
 
         public Tarea(String datos)
         {
@@ -49,8 +50,16 @@ namespace Capa_de_negocios.Entidades
                     case "desarrollo":
                         minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
                         return;
+                    case "semanaTerminacionPlaneada":
+                        semanaPlaneadaTerminacion= Convert.ToInt32(vectorSeparacion[1]);
+                        return;
+            
                 }
             }
+            minutosTotalesPlaneados = minutosLiderCalidad + minutosLiderDesarrollo + minutosLiderEquipo +
+                minutosLiderSoporte + minutosLiderPlaneacion;
+            valorPlaneado = minutosTotalesPlaneados / horasTrabajoSemanal;
+
         }
 
         public void setNombre(String nombre)

@@ -15,18 +15,7 @@ namespace Capa_de_negocios.Entidades
         public EquipoDesarrollo(String datos)
         {
             listaUsuarios = new List<Usuario>();
-            String[] vectorDatosJson = datos.Split(',');
-            foreach (String dato in vectorDatosJson)
-            {
-                String[] vectorSeparacion;
-                vectorSeparacion = dato.Split(':');
-                switch (vectorSeparacion[0])
-                {
-                    case "nombreEquipo":
-                        nombreEquipo = vectorSeparacion[1];
-                        break;
-                }
-            }
+            nombreEquipo = datos;
         }
 
         public String getNombre()

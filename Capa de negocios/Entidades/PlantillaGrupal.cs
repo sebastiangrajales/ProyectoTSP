@@ -32,15 +32,13 @@ namespace Capa_de_negocios.Entidades
             {
                 if (datos[i] == '}')
                 {
-                    tareas.Add(new Tarea(datos));
+                    tareas.Add(new Tarea(datosDeTareas));
                     datosDeTareas = "";
                 }
                 else if (datos[i] != '{')
                 {
-                    if (datos[i - 1] != '}')
-                    {
-                        datosDeTareas += datos[i];
-                    }
+                    datosDeTareas += datos[i];
+                 
                 }
             }
         }

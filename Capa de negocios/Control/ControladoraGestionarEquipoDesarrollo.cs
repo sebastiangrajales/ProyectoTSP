@@ -8,5 +8,6 @@ namespace Capa_de_negocios.Control
 {
     class ControladoraGestionarEquipoDesarrollo
     {
+
     }
 }
