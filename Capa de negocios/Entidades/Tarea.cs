@@ -8,15 +8,15 @@ namespace Capa_de_negocios.Entidades
 {
     class Tarea
     {
-        private String nombreTarea;
-        private int minutosLiderEquipo;
-        private int minutosLiderPlaneacion;
-        private int minutosLiderSoporte;
-        private int minutosLiderCalidad;
-        private int minutosLiderDesarrollo;
-        private int minutosTotalesPlaneados;
-        private int semanaPlaneadaTerminacion;
-        private double valorPlaneado;
+        public String nombreTarea { get; set; }
+        public int minutosLiderEquipo { get; set; }
+        public int minutosLiderPlaneacion { get; set; }
+        public int minutosLiderSoporte { get; set; }
+        public int minutosLiderCalidad { get; set; }
+        public int minutosLiderDesarrollo { get; set; }
+        public int minutosTotalesPlaneados { get; set; }
+        public int semanaPlaneadaTerminacion { get; set; }
+        public double valorPlaneado { get; set; }
         private List<String> minutosRolReal;
         private int minutosTotalesReal;
         private int semanaRealTerminacion;
@@ -25,7 +25,12 @@ namespace Capa_de_negocios.Entidades
 
         public Tarea(String datos)
         {
-            String[] vectorSeparador = datos.Split(',');
+            minutosLiderEquipo=0;
+            minutosLiderPlaneacion=0;
+            minutosLiderSoporte=0;
+            minutosLiderCalidad=0;
+            minutosLiderDesarrollo=0;
+        String[] vectorSeparador = datos.Split(',');
             foreach (String dato in vectorSeparador)
             {
                 String[] vectorSeparacion;
@@ -62,34 +67,6 @@ namespace Capa_de_negocios.Entidades
 
         }
 
-        public void setNombre(String nombre)
-        {
-            nombreTarea = nombre;
-        }
-
-        public void setMinutosLiderEquipo(int minutos)
-        {
-            minutosLiderEquipo = minutos;
-        }
-
-        public void setMinutosLiderPlaneacion(int minutos)
-        {
-            minutosLiderPlaneacion = minutos;
-        }
-
-        public void setMinutosLiderSoporte(int minutos)
-        {
-            minutosLiderSoporte = minutos;
-        }
-
-        public void setMinutosLiderCalidad(int minutos)
-        {
-            minutosLiderCalidad = minutos;
-        }
-
-        public void setMinutosLiderDesarrollo(int minutos)
-        {
-            minutosLiderDesarrollo = minutos;
-        }
+ 
     }
 }
