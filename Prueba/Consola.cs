@@ -1,4 +1,4 @@
-﻿using Capa_de_negocios;
+﻿using Capa_de_negocios.Control;
 using Capa_de_negocios.Datos;
 using Capa_de_negocios.Entidades;
 using System;
@@ -13,11 +13,15 @@ namespace Prueba
     {
         static void Main(string[] args)
         {
-            //var prueba = new PruebaDb();
-            Usuario usuario = new Usuario("nombre:sebas,apellido:graja,institucion:uca,rol:n" +
-                ",correo:Electronico:se@f,contraseña:1234,codigo:12");
-            RepositorioFake.adicionarUsuario(usuario);
-            Console.WriteLine((RepositorioFake.BuscarUsuario("12")).getNombre());
+            ControladoraRegistrarAlSistema controladoraRegistrarAlSistema = new ControladoraRegistrarAlSistema();
+            controladoraRegistrarAlSistema.registrarUsuario("nombre:sebas,apellido:graja,institucion:uca,rol:Estudiante,correo:Electronico:se@f,contraseña:1234,codigo:12");
+
+            while (true)
+            {
+                Console.WriteLine((RepositorioFake.BuscarUsuario("12")).nombre);
+            }
+            
+            
         }
     }
 }

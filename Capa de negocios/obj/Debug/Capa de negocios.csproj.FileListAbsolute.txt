@@ -14,3 +14,18 @@ C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\D
 C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.xml
 C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.csprojAssemblyReference.cache
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.pdb
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\Capa de negocios.dll.config
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\Capa de negocios.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\Capa de negocios.pdb
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Capa de negocios\obj\Debug\Capa de negocios.csproj.CopyComplete

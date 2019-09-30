@@ -8,14 +8,14 @@ namespace Capa_de_negocios
     {
          public PruebaDb()
         {
-            Database.SetInitializer<DataContext>(new DropCreateDatabaseAlways<DataContext>());
-            Console.WriteLine();
-            DataContext dbContext = new DataContext();
-            Usuario usuario = new Usuario("nombre:sebas,apellido:graja,institucion:uca,rol:n" +
-                ",correo:Electronico:se@f,contraseña:1234,codigo:12");
-            dbContext.Usuarios.Add(usuario);
-            dbContext.SaveChanges();
-            Console.ReadLine();
+            //Database.SetInitializer<DataContext>(new DropCreateDatabaseAlways<DataContext>());
+            //Console.WriteLine();
+            //DataContext dbContext = new DataContext();
+            //Usuario usuario = new Usuario("nombre:sebas,apellido:graja,institucion:uca,rol:n" +
+            //    ",correo:Electronico:se@f,contraseña:1234,codigo:12");
+            //dbContext.Usuarios.Add(usuario);
+            //dbContext.SaveChanges();
+            //Console.ReadLine();
         }
     }
 }
