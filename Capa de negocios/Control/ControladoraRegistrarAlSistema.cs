@@ -8,10 +8,10 @@ using Capa_de_negocios.Datos;
 
 namespace Capa_de_negocios.Control
 {
-    class ControladoraRegistrarAlSistema
+    public class ControladoraRegistrarAlSistema
     {
         public List<String> roles;
-        ControladoraRegistrarAlSistema()
+        public ControladoraRegistrarAlSistema()
         {
             roles = new List<string>();
             roles.Add("Coach");
@@ -57,26 +57,26 @@ namespace Capa_de_negocios.Control
                         break;
                 }
             }
-            foreach(String tipoRol in roles)
+            foreach (String tipoRol in roles)
             {
-                if(!rol.Equals(tipoRol))
+                if (rol.Equals(tipoRol))
                 {
-                    return false;
+                    if (RepositorioFake.BuscarUsuario(codigo) == null)
+                    {
+                        Usuario usuario = new Usuario();
+                        usuario.nombre = nombre;
+                        usuario.apellido = apellido;
+                        usuario.codigo = codigo;
+                        usuario.institucion = institucion;
+                        usuario.rol = rol;
+                        usuario.codigo = codigo;
+                        usuario.correoElectronico = correoElectronico;
+                        RepositorioFake.adicionarUsuario(usuario);
+                        return true;
+                    }
                 }
             }
-            if (RepositorioFake.BuscarUsuario(codigo) == null)
-            {
-                Usuario usuario = new Usuario();
-                usuario.nombre = nombre;
-                usuario.apellido = apellido;
-                usuario.codigo = codigo;
-                usuario.institucion = institucion;
-                usuario.rol = rol;
-                usuario.codigo = codigo;
-                usuario.correoElectronico = correoElectronico;
-                RepositorioFake.adicionarUsuario(usuario);
-                return true;
-            }
+            
             return false;
         }
     }

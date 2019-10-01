@@ -16,3 +16,20 @@ C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\bin\Debug\Entit
 C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.csproj.CopyComplete
 C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.exe
 C:\Users\Daniela\Documents\Sebastian\Proyecto\ProyectoTSP\Prueba\obj\Debug\Prueba.pdb
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Prueba.exe.config
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Prueba.exe
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Prueba.pdb
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Capa de datos.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Capa de negocios.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\EntityFramework.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Capa de datos.pdb
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Capa de datos.dll.config
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Capa de negocios.pdb
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\Capa de negocios.dll.config
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\EntityFramework.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\obj\Debug\Prueba.csprojAssemblyReference.cache
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\obj\Debug\Prueba.csproj.CopyComplete
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\obj\Debug\Prueba.exe
+D:\Documentos\Universidad\2019-2\SoftwareIII\ProyectoTSP\ProyectoTSP\Prueba\obj\Debug\Prueba.pdb
