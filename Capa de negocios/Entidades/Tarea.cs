@@ -23,44 +23,15 @@ namespace Capa_de_negocios.Entidades
         private int valorGanado;
         public double horasTrabajoSemanal { get; set; }
 
-        public Tarea(String datos)
+        public Tarea(String nombreTarea,int minutosLider,int minutosLiderPlaneacion,int minutosLiderSoporte,int minutosLiderCalidad,
+            int minutosLiderDesarrollo,int semanaPlaneadaterminacion)
         {
-            minutosLiderEquipo=0;
-            minutosLiderPlaneacion=0;
-            minutosLiderSoporte=0;
-            minutosLiderCalidad=0;
-            minutosLiderDesarrollo=0;
-        String[] vectorSeparador = datos.Split(',');
-            foreach (String dato in vectorSeparador)
-            {
-                String[] vectorSeparacion;
-                vectorSeparacion = dato.Split(':');
-                switch (vectorSeparacion[0])
-                {
-                    case "nombre":
-                        nombreTarea = vectorSeparacion[1];
-                        return;
-                    case "lider":
-                        minutosLiderEquipo = Convert.ToInt32(vectorSeparacion[1]);
-                        return;
-                    case "planeacion":
-                        minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
-                        return;
-                    case "calidad":
-                        minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
-                        return;
-                    case "soporte":
-                        minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
-                        return;
-                    case "desarrollo":
-                        minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
-                        return;
-                    case "semanaTerminacionPlaneada":
-                        semanaPlaneadaTerminacion= Convert.ToInt32(vectorSeparacion[1]);
-                        return;
-            
-                }
-            }
+            nombreTarea = this.nombreTarea;
+            minutosLiderEquipo=this.minutosLiderEquipo;
+            minutosLiderPlaneacion=this.minutosLiderPlaneacion;
+            minutosLiderSoporte=this.minutosLiderSoporte;
+            minutosLiderCalidad=this.minutosLiderCalidad;
+            minutosLiderDesarrollo=this.minutosLiderDesarrollo;
             minutosTotalesPlaneados = minutosLiderCalidad + minutosLiderDesarrollo + minutosLiderEquipo +
                 minutosLiderSoporte + minutosLiderPlaneacion;
             valorPlaneado = minutosTotalesPlaneados / horasTrabajoSemanal;
