@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Capa_de_negocios.Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,40 +7,19 @@ using System.Threading.Tasks;
 
 namespace Capa_de_negocios.Entidades
 {
-    class PlantillaGrupal
+    public class PlantillaGrupal
     {
         private List<Tarea> tareas;
 
         public PlantillaGrupal()
         {
-            tareas = new List<Tarea>();
-        }
-
-        private Tarea buscarTarea(String nombreTarea)
-        {
-            foreach(Tarea tarea in tareas)
-            {
-                if (tarea.nombreTarea.Equals(nombreTarea))
-                    return tarea;
-            }
-            return null;
-        }
-
-        public void modificarTarea(String datos)
-        {
-
         }
 
         public void agregarTareas(String datos)
         {
-            String nombreTarea="";
-            Int32 minutosLiderEquipo=0;
-            Int32 minutosLiderPlaneacion=0;
-            Int32 minutosLiderCalidad=0;
-            Int32 minutosLiderSoporte=0;
-            Int32 minutosLiderDesarrollo=0;
-            Int32 semanaPlaneadaTerminacion=0;
             String datosDeTareas = "";
+            Tarea nuevaTarea = new Tarea();
+
             for (int i = 0; i < datos.Length; i++)
             {
                 if (datos[i] == '}')
@@ -52,30 +32,29 @@ namespace Capa_de_negocios.Entidades
                         switch (vectorSeparacion[0])
                         {
                             case "nombre":
-                                nombreTarea = vectorSeparacion[1];
+                                nuevaTarea.nombreTarea = vectorSeparacion[1];
                                 return;
                             case "lider":
-                                minutosLiderEquipo = Convert.ToInt32(vectorSeparacion[1]);
+                                nuevaTarea.minutosLiderEquipo = Convert.ToInt32(vectorSeparacion[1]);
                                 return;
                             case "planeacion":
-                                minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
+                                nuevaTarea.minutosLiderPlaneacion = Convert.ToInt32(vectorSeparacion[1]);
                                 return;
                             case "calidad":
-                                minutosLiderCalidad = Convert.ToInt32(vectorSeparacion[1]);
+                                nuevaTarea.minutosLiderCalidad = Convert.ToInt32(vectorSeparacion[1]);
                                 return;
                             case "soporte":
-                                minutosLiderSoporte = Convert.ToInt32(vectorSeparacion[1]);
+                                nuevaTarea.minutosLiderSoporte = Convert.ToInt32(vectorSeparacion[1]);
                                 return;
                             case "desarrollo":
-                                minutosLiderDesarrollo = Convert.ToInt32(vectorSeparacion[1]);
+                                nuevaTarea.minutosLiderDesarrollo = Convert.ToInt32(vectorSeparacion[1]);
                                 return;
                             case "semanaTerminacionPlaneada":
-                                semanaPlaneadaTerminacion = Convert.ToInt32(vectorSeparacion[1]);
+                                nuevaTarea.semanaPlaneadaTerminacion = Convert.ToInt32(vectorSeparacion[1]);
                                 return;
                         }
                     }
-                    tareas.Add(new Tarea(nombreTarea,minutosLiderEquipo,minutosLiderPlaneacion,minutosLiderCalidad,minutosLiderSoporte,
-                        minutosLiderDesarrollo,semanaPlaneadaTerminacion));
+                    RepositorioFake.adicionarTarea(nuevaTarea);
                     datosDeTareas = "";
                 }
                 else if (datos[i] != '{')

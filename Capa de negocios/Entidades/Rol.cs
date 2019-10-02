@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Capa_de_negocios.Entidades
 {
-    class Rol
+    public enum Rol
     {
-        public Rol()
-        {
+        Estudiante, 
+        Coach 
 
-        }
+
     }
+
 }

@@ -13,15 +13,27 @@ namespace Prueba
     {
         static void Main(string[] args)
         {
-            ControladoraRegistrarAlSistema controladoraRegistrarAlSistema = new ControladoraRegistrarAlSistema();
-            controladoraRegistrarAlSistema.registrarUsuario("nombre:sebas,apellido:graja,institucion:uca,rol:Estudiante,correo:Electronico:se@f,contraseña:1234,codigo:12");
+            //ControladoraRegistrarAlSistema controladoraRegistrarAlSistema = new ControladoraRegistrarAlSistema();
+            //controladoraRegistrarAlSistema.registrarUsuario("nombre:sebas,apellido:graja,institucion:uca,rol:Coach,correo:Electronico:se@f,contraseña:1234,codigo:12");
+
+            //while (true)
+            //{
+            //    Console.WriteLine((RepositorioFake.BuscarUsuario("12")).rol);
+            //}
+
+            PlantillaGrupal plantillaGrupal = new PlantillaGrupal();
+
+            //
+            //RepositorioFake.adicionarTarea(new Tarea("ReunionSemanal",120,120,120,120,120,4));
+            plantillaGrupal.agregarTareas("nombre:\"hola\",lider:120,planeacion:120,calidad:120,soporte:120," +
+                "desarrollo:120,semanaTerminacionPlaneada:4}");
 
             while (true)
             {
-                Console.WriteLine((RepositorioFake.BuscarUsuario("12")).nombre);
+                Console.WriteLine((RepositorioFake.consultarTarea("ReunionSemanal")).nombreTarea);
             }
-            
-            
+
+
         }
     }
 }

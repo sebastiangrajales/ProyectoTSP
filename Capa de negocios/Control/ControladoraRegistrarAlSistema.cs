@@ -5,21 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Capa_de_negocios.Entidades;
 using Capa_de_negocios.Datos;
+using System.Web.Security;
 
 namespace Capa_de_negocios.Control
 {
     public class ControladoraRegistrarAlSistema
     {
-        public List<String> roles;
         public ControladoraRegistrarAlSistema()
         {
-            roles = new List<string>();
-            roles.Add("Coach");
-            roles.Add("Estudiante");
+
         }
 
         public Boolean registrarUsuario(String datos)
         {
+            Type roles = typeof(Rol);
             var nombre="";
             var apellido = "";
             var institucion = "";
@@ -57,7 +56,7 @@ namespace Capa_de_negocios.Control
                         break;
                 }
             }
-            foreach (String tipoRol in roles)
+            foreach (String tipoRol in Enum.GetNames(roles))
             {
                 if (rol.Equals(tipoRol))
                 {
